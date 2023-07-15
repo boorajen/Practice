@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
 (
         features = {"src\\main\\resources\\user_Story"},
         glue = {"org.example.stepDef"},
-        plugin = {"pretty","html:target/Report.html"},
+        plugin = {"pretty","html:target/Report.html",
+        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         stepNotifications = true
 
 )
